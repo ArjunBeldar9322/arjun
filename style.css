@@ -1,0 +1,118 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Krishna_and_Arjuna_in_a_chariot.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #e67e22;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #cf711f;
+}
+
+/* Content Sections */
+.content {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.content.light {
+  background: #f4f4f4;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
